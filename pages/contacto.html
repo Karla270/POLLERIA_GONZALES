@@ -8,8 +8,17 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="shortcut icon" href="../assets/icons/pollo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
 </head>
 
 <body>
@@ -17,29 +26,28 @@
         <header>
             <div class="container-header">
                 <div class="item-2 logo animate__animated animate__fadeInDown">
-                    <img src="../assets/img/logo.png" alt="Logo" width="120px">
-                    <h1 class="name-header">POLLERIA D'MARYS</h1>
+                    <img src="../assets/img/logo.png" alt="Logo" class="logo-img">
+                    <h2 class="name-header pt-3">POLLERIA D'MARYS</h2>
                 </div>
-                <div class="item-2 icons-header">
-                    <div class="pr-20 center">
+                <div class="item-2 icons-header text-center pt-5">
+                    <div>
                         <i class="fa fa-phone icon-header"></i>
                         <p class="text-icon-header">99999999</p>
                     </div>
-                    <div class="pr-20 center">
+                    <div>
                         <a id="login" href="login.html">
                             <i class="fa fa-user icon-header"></i>
                             <p class="text-icon-header">Bienvenid@</p>
                         </a>
                     </div>
 
-                    <div class="pr-20 center">
+                    <div class="pr-3">
                         <i class="fa fa-shopping-cart icon-header"></i>
                         <p class="text-icon-header">S/0.00</p>
                     </div>
 
                 </div>
             </div>
-            <hr>
         </header>
 
         <section id="content">
@@ -55,100 +63,88 @@
                             <li><a href="locales.html">CHORRILLOS</a></li>
                         </ul>
                     </li>
-                    <li><a href="contacto.html" class="selected">CONTÁCTANOS</a>
+                    <li><a href="contacto.html" class="bg-danger">CONTÁCTANOS</a>
                     </li>
                 </ul>
             </div>
-            <div class="form-contacto">
-                <fieldset class="card-form">
-                    <legend class="center">CONTÁCTANOS</legend>
-                    <form action="#">
-                        <div class="item-2">
-                            <label for="nombres">Nombres:
-                                <input type="text" name="nombres">
-                            </label>
-                        </div>
 
-                        <div class="item-2">
-                            <label for="apellidos">Apellidos:
-                                <input type="text" name="apellidos">
-                            </label>
-                        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 col-xs-12 ml-auto mr-auto pt-lg-5 pt-md-1">
+                        <form name="loginForm">
+                            <div class="card animate__animated animate__backInDown">
+                                <legend class="text-center"><u><b>CONTÁCTANOS</b></u></legend>
+                                <div class="row pt-3">
+                                    <div class="col-sm-6 col-xs-12 form-group">
+                                        <label for="exampleInputEmail1">Nombres</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1">
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12 form-group">
+                                        <label for="exampleInputEmail1">Apellidos</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1">
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12 form-group">
+                                        <label for="exampleInputEmail1">Teléfono</label>
+                                        <input type="tel" class="form-control" id="exampleInputEmail1">
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12 form-group">
+                                        <label for="exampleInputEmail1">Correo</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1">
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12 -group">
+                                        <label for="localSelect">Local</label>
+                                        <select id="localSelect" class="form-control" style="height: auto !important;">
+                                            <option>Escoge un local</option>
+                                            <option>Chorrillos</option>
+                                            <option>Surco</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12 form-group">
+                                        <label for="exampleInputEmail1">Asunto</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1">
+                                    </div>
+                                    <div class="col-sm-12 form-group">
+                                        <label for="exampleInputEmail1">Mensaje</label>
+                                        <textarea class="form-control" rows="2"></textarea>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button type="button" class="btn btn-primary btn-lg active">Enviar</button>
+                                        <button type="button" class="btn btn-danger btn-lg active">Limpiar</button>
+                                    </div>
 
-                        <div class="item-2">
-                            <label for="telefono">Teléfono:
-                                <input type="tel" name="telefono">
-                            </label>
-                        </div>
-
-                        <div class="item-2">
-                            <label for="email">Correo:
-                                <input type="email" placeholder="aaa@gmail.com" name="email">
-                            </label>
-                        </div>
-
-                        <div class="item-2">
-                            <label for="local">Local:
-                                <select name="local" id="local">
-                                    <option value="" selected></option>
-                                    <option value="1">Santiago de Surco</option>
-                                    <option value="2">Chorrillos</option>
-                                </select>
-                            </label>
-                        </div>
-
-                        <div class="item-2">
-                            <label for="asunto">Asunto:
-                                <input type="text" name="asunto">
-                            </label>
-                        </div>
-
-                        <div class="item-1">
-                            <label for="mensaje">Mensaje:</label>
-                            <textarea placeholder="Mensaje" style="margin-top: 10px;"></textarea>
-
-                        </div>
-
-                        <div class="item-1">
-                            <button type="button" class="primary">ENVIAR</button>
-                            <button type="button" class="danger">LIMPIAR</button>
-                        </div>
-
-                    </form>
-                </fieldset>
-
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
 
         </section>
 
         <footer>
-            <hr>
             <div class="items-footer animate__animated animate__slideInLeft">
                 <div class="item-4">
-                    <img src="../assets/img/logo.png" alt="Logo" width="150px">
+                    <img src="../assets/img/logo.png" alt="Logo" class="logo-img">
                 </div>
-                <div class="space-2 item-4">
-                    <h3>Contáctanos</h3>
-                    <div class="mr-15">
-                        <p> <i class="fa fa-phone"></i>99999999</p>
-                        <p class="mtn-15"> <i class="fa fa-whatsapp"></i>99999999</p>
-                    </div>
+                <div class="mt-1 item-4 space-5">
+                    <h4><b>Contáctanos</b></h4>
+                    <p> <i class="fa fa-phone"></i><span style="margin-left: -10px;">999999999</span></p>
                 </div>
-                <div class="space-2 item-4">
-                    <h3>Medios de Pago</h3>
+                <div class="mt-1 item-4 space-5">
+                    <h4><b>Medios de Pago</b></h4>
                     <i class="fa fa-paypal"></i>
                     <i class="fa fa-money"></i>
                     <i class="fa fa-credit-card"></i>
                 </div>
-                <div class="space-2 item-4">
-                    <h3>Síguenos en</h3>
+                <div class="mt-1 item-4 space-5">
+                    <h4><b>Síguenos en</b></h4>
                     <i href="#" class="fa fa-facebook"></i>
                     <i href="#" class="fa fa-instagram"></i>
                     <i href="#" class="fa fa-youtube"></i>
                 </div>
             </div>
         </footer>
-        <div class="fixed-bottom">
+        <div class="fixed-whatsapp">
             <img class="icono-contactenos" src="../assets/icons/whatsapp-icon-64px.png" alt="Icono de Whatsapp"
                 data-toggle="tooltip" data-placement="left" title="Whatsappeame!"
                 onclick="window.open('https://api.whatsapp.com/send?phone=51987654321&text=Hola')">

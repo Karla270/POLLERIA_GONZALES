@@ -8,8 +8,17 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="assets/icons/pollo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
 </head>
 
 <body>
@@ -17,35 +26,34 @@
         <header>
             <div class="container-header">
                 <div class="item-2 logo animate__animated animate__fadeInDown">
-                    <img src="assets/img/logo.png" alt="Logo" width="120px">
-                    <h1 class="name-header">POLLERIA D'MARYS</h1>
+                    <img src="assets/img/logo.png" alt="Logo" class="logo-img">
+                    <h2 class="name-header pt-3">POLLERIA D'MARYS</h2>
                 </div>
-                <div class="item-2 icons-header">
-                    <div class="pr-20 center">
+                <div class="item-2 icons-header text-center pt-5">
+                    <div>
                         <i class="fa fa-phone icon-header"></i>
                         <p class="text-icon-header">99999999</p>
                     </div>
-                    <div class="pr-20 center">
+                    <div>
                         <a id="login" href="pages/login.html">
                             <i class="fa fa-user icon-header"></i>
                             <p class="text-icon-header">Bienvenid@</p>
                         </a>
                     </div>
 
-                    <div class="pr-20 center">
+                    <div class="pr-3">
                         <i class="fa fa-shopping-cart icon-header"></i>
                         <p class="text-icon-header">S/0.00</p>
                     </div>
 
                 </div>
             </div>
-            <hr>
         </header>
 
         <section id="content">
             <div id="nav">
                 <ul>
-                    <li><a href="index.html" class="selected">PROMOCIONES</a>
+                    <li><a href="index.html" class="bg-danger">PROMOCIONES</a>
                     </li>
                     <li><a href="pages/carta.html">CARTA</a>
                     </li>
@@ -59,72 +67,110 @@
                     </li>
                 </ul>
             </div>
-            <div class="center animate__animated animate__backInDown">
-                <iframe class="responsive-iframe" height="500" src="https://www.youtube.com/embed/CnKq1CUhqsM"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            <div class="text-center animate__animated animate__backInDown">
+                <div class="container">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="assets/img/promo_1.jpg" alt="Promo 1" style="width:100%;height:450px;">
+                            </div>
+
+                            <div class="item">
+                                <img src="assets/img/promo_2.jpg" alt="Promo 2" style="width:100%;height:450px;">
+                            </div>
+
+                            <div class="item">
+                                <img src="assets/img/promo_3.jpg" alt="Promo 3" style="width:100%;height:450px;">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/promo_4.jpg" alt="Promo 4" style="width:100%;height:450px;">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <h2 class="center" style="margin-top: 5px;"><u>PROMOCIONES</u></h2>
-            <div class="img-productos">
-                <div class="item-4">
-                    <div class="card height-promocion">
-                        <h3 class="center">POLLO OFERTA</h3>
-                        <img src="assets/img/pollo.png" alt="Logo" class="logo-img">
-                        <div class="space-1">
-                            <p>1 Pollo a la Brasa</p>
-                            <p>+ Papas Fritas </p>
-                            <p>+ Inka Hola 1.5 Lt </p>
-                            <p>+ Ensalada Fresca</p>
+            <h2 class="text-center pt-3"><u><b>PROMOCIONES</b></u></h2>
 
-                            <div class="mr-15">
-                                <h2> <b>S/55.00</b><i class="fa fa-cart-plus icon-card"></i></h2>
+            <div class="container-fluid">
+                <div class="row pb-lg-5 pb-md-1">
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="card height-promocion text-center">
+                            <h3>POLLO OFERTA</h3>
+                            <img src="assets/img/pollo.png" alt="Logo" class="productos-img img-rounded">
+                            <div class="mt-3">
+                                <span>1 Pollo a la Brasa</span><br>
+                                <span>+ Papas Fritas </span><br>
+                                <span>+ Inka Hola 1.5 Lt <span><br>
+                                        <span>+ Ensalada Fresca</span>
+                                        <div class="mt-2">
+                                            <h4> <b>S/55.00</b><i class="fa fa-cart-plus icon-card"></i></h4>
+                                        </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="item-4">
-                    <div class="card height-promocion">
-                        <h3 class="center">1/2 POLLO OFERTA</h3>
-                        <img src="assets/img/medio_pollo.png" alt="Logo" class="logo-img">
-                        <div class="space-1">
-                            <p>1/2 de Pollo a la Brasa</p>
-                            <p>+ Papas Fritas </p>
-                            <p>+ Arroz Chaufa </p>
-                            <p>+ Ensalada Fresca</p>
-                            <div class="mr-15">
-                                <h2> <b>S/30.00</b><i class="fa fa-cart-plus icon-card"></i></h2>
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="card height-promocion text-center">
+                            <h3>1/2 POLLO OFERTA</h3>
+                            <img src="assets/img/medio_pollo.png" alt="Logo" class="productos-img img-rounded"> 
+                            <div class="mt-3">
+                                </span>1/2 de Pollo a la Brasa</span><br>
+                                </span>+ Papas Fritas </span><br>
+                                </span>+ Arroz Chaufa </span><br>
+                                </span>+ Ensalada Fresca</span>
+                                <div class="mt-2">
+                                    <h4> <b>S/30.00</b><i class="fa fa-cart-plus icon-card"></i></h4>
+                                </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
-                </div>
-                <div class="item-4">
-                    <div class="card height-promocion">
-                        <h3 class="center">POLLO OFERTA</h3>
-                        <img src="assets/img/pollo.png" alt="Logo" class="logo-img">
-                        <div class="space-1">
-                            <p>1 Pollo a la Brasa</p>
-                            <p>+ Papas Fritas </p>
-                            <p>+ Inka Hola 1.5 Lt </p>
-                            <p>+ Ensalada Fresca</p>
-                            <div class="mr-15">
-                                <h2> <b>S/55.00</b><i class="fa fa-cart-plus icon-card"></i></h2>
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="card height-promocion text-center">
+                            <h3>POLLO OFERTA</h3>
+                            <img src="assets/img/pollo.png" alt="Logo" class="productos-img img-rounded">
+                            <div class="mt-3">
+                                </span>1 Pollo a la Brasa</span><br>
+                                </span>+ Papas Fritas </span><br>
+                                </span>+ Inka Hola 1.5 Lt </span><br>
+                                </span>+ Ensalada Fresca</span>
+                                <div class="mt-2">
+                                    <h4> <b>S/55.00</b><i class="fa fa-cart-plus icon-card"></i></h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="item-4">
-                    <div class="card height-promocion">
-                        <h3 class="center">1/2 POLLO OFERTA</h3>
-                        <img src="assets/img/medio_pollo.png" alt="Logo" class="logo-img">
-                        <div class="space-1">
-                            <p>1/2 de Pollo a la Brasa</p>
-                            <p>+ Papas Fritas </p>
-                            <p>+ Arroz Chaufa </p>
-                            <p>+ Ensalada Fresca</p>
-                            <div class="mr-15">
-                                <h2> <b>S/30.00</b><i class="fa fa-cart-plus icon-card"></i></h2>
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="card height-promocion text-center">
+                            <h3>1/2 POLLO OFERTA</h3>
+                            <img src="assets/img/medio_pollo.png" alt="Logo" class="productos-img img-rounded">
+                            <div class="mt-3">
+                                </span>1/2 de Pollo a la Brasa</span><br>
+                                </span>+ Papas Fritas </span><br>
+                                </span>+ Arroz Chaufa</span><br>
+                                </span>+ Ensalada Fresca</span>
+                                <div class="mt-2">
+                                    <h4> <b>S/30.00</b><i class="fa fa-cart-plus icon-card"></i></h4>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -132,34 +178,31 @@
 
             </div>
         </section>
+        
         <footer>
-            <hr>
             <div class="items-footer animate__animated animate__slideInLeft">
                 <div class="item-4">
-                    <img src="assets/img/logo.png" alt="Logo" width="150px">
+                    <img src="assets/img/logo.png" alt="Logo" class="logo-img">
                 </div>
-                <div class="space-2 item-4">
-                    <h3>Contáctanos</h3>
-                    <div class="mr-15">
-                        <p> <i class="fa fa-phone"></i>99999999</p>
-                        <p class="mtn-15"> <i class="fa fa-whatsapp"></i>99999999</p>
-                    </div>
+                <div class="mt-1 item-4 space-5">
+                    <h4><b>Contáctanos</b></h4>
+                    <p> <i class="fa fa-phone"></i><span style="margin-left: -10px;">999999999</span></p>
                 </div>
-                <div class="space-2 item-4">
-                    <h3>Medios de Pago</h3>
+                <div class="mt-1 item-4 space-5">
+                    <h4><b>Medios de Pago</b></h4>
                     <i class="fa fa-paypal"></i>
                     <i class="fa fa-money"></i>
                     <i class="fa fa-credit-card"></i>
                 </div>
-                <div class="space-2 item-4">
-                    <h3>Síguenos en</h3>
+                <div class="mt-1 item-4 space-5">
+                    <h4><b>Síguenos en</b></h4>
                     <i href="#" class="fa fa-facebook"></i>
                     <i href="#" class="fa fa-instagram"></i>
                     <i href="#" class="fa fa-youtube"></i>
                 </div>
             </div>
         </footer>
-        <div class="fixed-bottom">
+        <div class="fixed-whatsapp">
             <img class="icono-contactenos" src="./assets/icons/whatsapp-icon-64px.png" alt="Icono de Whatsapp"
                 data-toggle="tooltip" data-placement="left" title="Whatsappeame!"
                 onclick="window.open('https://api.whatsapp.com/send?phone=51987654321&text=Hola')">
