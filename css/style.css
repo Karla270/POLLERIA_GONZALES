@@ -13,25 +13,27 @@
 html,
 body {
     height: 100%;
-    line-height: normal !important;
-}
-
-legend {
-    color: #167ac6 !important;
-    font-weight: bolder !important;
+    line-height: normal;
 }
 
 footer {
     width: 100%;
-    height: 100px !important;
+    height: 105px;
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
+.tittle-card {
+    color: #167ac6;
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
 #content {
     /* ... */
-    padding-bottom: 110px;
+    padding-bottom: 105px;
     /* El tamaño del footer para evitar el sobreposicionamiento */
 }
 
@@ -99,17 +101,17 @@ footer {
     background: #0066FF;
     display: block;
     width: auto;
-    padding-right: 18px;
-    z-index: 99999999 !important;
+    padding-right: 22px;
+    z-index: 99999999;
 }
 
 #nav ul li:hover ul a {
-    background: none !important;
+    background: none;
     border: none;
 }
 
 #nav ul li:hover ul li a:hover {
-    background-color: #0088FF !important;
+    background-color: #0088FF;
 }
 
 #wrapper {
@@ -128,7 +130,7 @@ footer {
     display: flex;
     background: rgb(179 220 252 / 80%);
     border-bottom: 4px solid #0066ff;
-    line-height: 0 !important;
+    line-height: 0;
 }
 
 .logo {
@@ -159,7 +161,7 @@ footer {
 
 .card {
     border-radius: 20px !important;
-    background-color: #f2f1ef !important;
+    background-color: #f2f1ef;
     padding: 10px;
     margin: 10px;
     border: 4px solid #0066ff !important;
@@ -245,7 +247,7 @@ footer {
 }
 
 .height-promocion {
-    min-height: 98% !important;
+    min-height: 98%;
 }
 
 .item-4 {
@@ -329,6 +331,12 @@ footer {
 
     footer {
         height: auto;
+    }
+
+    #content {
+        /* ... */
+        padding-bottom: 240px;
+        /* El tamaño del footer para evitar el sobreposicionamiento */
     }
 }
 
