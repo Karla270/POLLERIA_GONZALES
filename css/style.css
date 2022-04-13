@@ -167,6 +167,10 @@ footer {
     border: 4px solid #0066ff !important;
 }
 
+.pb-productos:not(:last-of-type) {
+    padding-bottom: 10px !important;
+}
+
 .fixed-whatsapp {
     position: fixed;
     right: 0;
