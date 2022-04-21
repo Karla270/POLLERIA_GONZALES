@@ -1,17 +1,17 @@
 //Paleta de colores
-//350
+//350 335
 :root {
-   --color: 350;
-   --color-secundary: 335;
+   --color: 151;
+   --color-secundary: 50;
 //    --background-header-footer: hsl(var(--color), 60%, 88%);
 //    --color-border: hsl(var(--color), 100%, 50%);
 //    --color-header: hsl(var(--color), 80%, 50%);
 //    --background-hoover-menu: hsl(var(--color), 48%, 50%);
 }
-$color-border: HSL(var(--color), 100%, 50%);
-$background-header-footer: HSL(var(--color), 60%, 88%, 0.8);
-$background-hoover-menu: HSL(var(--color-secundary), 100%, 60%);
-$color-tittle-card: HSL(var(--color), 100%, 60%);
-$color-header: HSL(var(--color), 40%, 40%);
-$background-active-menu: HSL(var(--color-secundary), 100%, 50%);
+$color-border: HSL(var(--color), 40%, 40%);
+$background-header-footer: HSL(var(--color), 86%, 40%, 0.8);
+$background-menu: HSL(var(--color-secundary), 100%, 45%);
+$color-tittle-card: HSL(var(--color), 60%, 50%);
+$color-header: HSL(var(--color), 80%, 20%);
+// $background-active-menu: HSL(var(--color-secundary), 85%, 55%);
 

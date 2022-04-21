@@ -61,7 +61,7 @@ footer {
     }
 
     a:hover {
-        background-color: $background-hoover-menu
+        background-color: $background-menu
     }
 
     ul {
@@ -91,7 +91,7 @@ footer {
                 }
 
                 li a:hover {
-                    background-color: $background-hoover-menu;
+                    background-color: $background-menu;
                 }
             }
 
@@ -115,11 +115,11 @@ footer {
             }
         }
     }
-    
-    .selected {
-       background: $background-active-menu !important;
-    }
 }
+
+.selected {
+    background: $background-menu !important; 
+ }
 
 #wrapper {
     min-height: 100%;
@@ -152,7 +152,7 @@ footer {
 
 .name-header {
     margin-top: 2.5rem;
-    color: red;
+    color: white;
     font-weight: bold;
 }
 
