@@ -240,11 +240,6 @@ $redes: ( /*Declaramos nuestro mapa*/
             color: white;
 
             @if  ($red==facebook) {
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-    
-            @if ($red==google) {
                 padding-left: 13px;
                 padding-right: 13px;
             }

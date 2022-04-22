@@ -26,7 +26,7 @@ footer {
 }
 
 .tittle-card {
-  color: HSL(var(--color), 60%, 50%);
+  color: HSL(var(--color), 60%, 40%);
   font-weight: bolder;
   font-size: 1.5em;
   margin-bottom: 15px;
@@ -216,8 +216,8 @@ footer {
 .fa-facebook {
   background: #3B5998;
   color: white;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 13px;
+  padding-right: 13px;
 }
 
 .fa-instagram {
@@ -228,8 +228,6 @@ footer {
 .fa-google {
   background: #de2125;
   color: white;
-  padding-left: 13px;
-  padding-right: 13px;
 }
 
 .fa-youtube {
