@@ -89,6 +89,38 @@ $estilos: (paddingLeft: 13px,
     border: 4px solid $color-border !important;
 }
 
+.carousel-inner {
+    margin-left: 15%;
+
+    .item {
+        img {
+            width: 70%;
+            height: 500px !important;
+            border: solid 5px #007235;
+            border-radius: 20px;
+        }
+    }
+}
+
+.carousel-control {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.carousel-control.left {
+    background-image: none !important;
+}
+
+.carousel-control.right {
+    background-image: none !important;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next,
+.carousel-control .icon-prev {
+    color: #3d8f67;
+}
 
 #nav {
 
@@ -277,7 +309,8 @@ $color in $redes {
 
 .form-contacto {
     display: grid;
-    justify-items: map-get($estilos, textAlign);;
+    justify-items: map-get($estilos, textAlign);
+    ;
     width: map-get($estilos, widthPercent);
 }
 
@@ -334,6 +367,20 @@ $color in $redes {
 
     .col-xs-12 {
         padding-top: 1rem !important;
+    }
+
+    .carousel-inner {
+        margin-left: 0;
+
+        .item {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .carousel-control {
+        margin: 0;
     }
 }
 
