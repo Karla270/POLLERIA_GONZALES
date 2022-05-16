@@ -13,31 +13,31 @@ body {
 }
 
 footer {
-    @include sizes (100%, 106px);
+    @include sizes (100%, auto);
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
-$estilos: (paddingLeft: 13px,
+$estilos: (
+    paddingLeft: 13px,
     paddingRight: 13px,
     color: white,
     fontWeight: bolder,
     textDecoration: none,
     widthPercent: 100%,
-    textAlign: center);
+    textAlign: center
+);
 
 
 .tittle-card {
     color: $color-tittle-card;
     font-weight: map-get($estilos, fontWeight);
-    font-size: 1.5em;
-    margin-bottom: 15px;
 }
 
 #content {
     /* ... */
-    padding-bottom: 106px;
+    padding-bottom: 100px;
     /* El tamaño del footer para evitar el sobreposicionamiento */
 }
 
@@ -72,7 +72,7 @@ $estilos: (paddingLeft: 13px,
 }
 
 .name-header {
-    margin-top: 2.5rem;
+    margin-top: 15px;
     color: white;
     font-weight: map-get($estilos, fontWeight);
 }
@@ -83,44 +83,12 @@ $estilos: (paddingLeft: 13px,
 }
 
 .card {
-    border-radius: 20px !important;
+    border-radius: 20px;
     background-color: #f2f1ef;
     @include spaces (10px, 10px);
-    border: 4px solid $color-border !important;
+    border: 4px solid $color-border;
 }
 
-.carousel-inner {
-    margin-left: 15%;
-
-    .item {
-        img {
-            width: 70%;
-            height: 500px !important;
-            border: solid 5px #007235;
-            border-radius: 20px;
-        }
-    }
-}
-
-.carousel-control {
-    margin-right: 10%;
-    margin-left: 10%;
-}
-
-.carousel-control.left {
-    background-image: none !important;
-}
-
-.carousel-control.right {
-    background-image: none !important;
-}
-
-.carousel-control .glyphicon-chevron-left,
-.carousel-control .glyphicon-chevron-right,
-.carousel-control .icon-next,
-.carousel-control .icon-prev {
-    color: #3d8f67;
-}
 
 #nav {
 
@@ -194,7 +162,7 @@ $estilos: (paddingLeft: 13px,
 }
 
 .selected {
-    background: $background-menu !important;
+    background: $background-menu  !important;
     font-weight: map-get($estilos, fontWeight);
 }
 
@@ -211,7 +179,7 @@ $estilos: (paddingLeft: 13px,
 
 
 /* .pb-productos:not(:last-of-type) {
-    padding-bottom: 10px !important;
+    padding-bottom: 10px;
 } */
 
 .space-5 {
@@ -224,9 +192,9 @@ $estilos: (paddingLeft: 13px,
     text-align: map-get($estilos, textAlign);
     text-decoration: map-get($estilos, textDecoration);
     border-radius: 50%;
-    font-size: 20px !important;
+    font-size: 20px;
     cursor: pointer;
-    display: initial !important;
+    display: initial;
 
     &:hover {
         opacity: 0.7;
@@ -243,7 +211,8 @@ $redes: (
     credit-card : #bb0000,
     money : #f40083,
     phone : $color-header,
-    whatsapp : green);
+    whatsapp : green
+);
 
 
 /*Creamos el bucle para usar los valores del mapa*/
@@ -284,8 +253,23 @@ $color in $redes {
     width: 90%;
 }
 
+#demo {
+    width: 75%;
+}
+
+.carousel-inner {
+    .carousel-item {
+        img {
+            width: 70%;
+            height: 500px;
+            border: solid 5px #007235;
+            border-radius: 20px;
+        }
+    }
+}
+
 .icon-header {
-    font-size: 40px !important;
+    font-size: 40px;
     margin-top: 10px;
     color: $color-header;
 }
@@ -298,7 +282,7 @@ $color in $redes {
 }
 
 .icon-card {
-    font-size: 40px !important;
+    font-size: 40px;
 }
 
 .card-form-login {
@@ -321,7 +305,7 @@ $color in $redes {
 .fixed-whatsapp {
     position: fixed;
     right: 0;
-    bottom: 0;
+    bottom: 10px;
     z-index: 1030;
     cursor: pointer;
 }
@@ -339,7 +323,7 @@ $color in $redes {
     }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 900px) {
     .item-4 {
         flex: 0 0 50%;
         max-width: 50%;
@@ -361,26 +345,25 @@ $color in $redes {
 
     #content {
         /* ... */
-        padding-bottom: 240px;
+        padding-bottom: 280px;
         /* El tamaño del footer para evitar el sobreposicionamiento */
     }
 
     .col-xs-12 {
-        padding-top: 1rem !important;
+        padding-top: 1rem;
     }
 
     .carousel-inner {
-        margin-left: 0;
-
-        .item {
+        .carousel-item {
             img {
                 width: 100%;
+                height: 400px;
             }
         }
     }
 
-    .carousel-control {
-        margin: 0;
+    #demo {
+        width: 100%;
     }
 }
 
