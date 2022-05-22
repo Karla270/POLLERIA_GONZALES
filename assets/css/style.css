@@ -26,7 +26,7 @@ footer {
 
 #content {
   /* ... */
-  padding-bottom: 100px;
+  padding-bottom: 120px;
   /* El tamaño del footer para evitar el sobreposicionamiento */ }
 
 .header-footer, .items-footer, .container-header {
@@ -212,10 +212,10 @@ footer {
   width: 90%; }
 
 #demo {
-  width: 75%; }
+  width: 100%; }
 
 .carousel-inner .carousel-item img {
-  width: 70%;
+  width: 100%;
   height: 500px;
   border: solid 5px #007235;
   border-radius: 20px; }
