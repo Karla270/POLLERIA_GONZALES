@@ -4352,6 +4352,7 @@ hr+.footer-social-list {
 .services-terri {
 	position: relative;
 	text-align: center;
+	border-radius: 20px;
 }
 
 .services-terri::before {
@@ -4371,8 +4372,8 @@ hr+.footer-social-list {
 	margin: auto;
 	align-items: center;
 	justify-content: center;
-	width: 350px;
-	height: 510px;
+	width: 100%;
+	height: 260px;
 	display: grid;
 	overflow: hidden;
 }
@@ -4380,6 +4381,7 @@ hr+.footer-social-list {
 .services-terri-figure img {
 	display: inline-block;
 	width: 100%;
+	height: 230px;
 	transition: all .2s ease;
 }
 
@@ -6311,6 +6313,7 @@ html [class*='section-'].section-top-0 {
 .desktop .oh-desktop {
 	position: relative;
 	overflow: hidden;
+	border-radius: 20px;
 }
 
 p.rights {
@@ -16033,6 +16036,7 @@ disabled look for disabled choices in the results dropdown
 .size-logo {
 	height: 50px !important;
 	width: 80px !important;
+	display: none !important;
 
 }
 
@@ -16049,8 +16053,9 @@ disabled look for disabled choices in the results dropdown
 		padding-bottom: 40px;
 	}
 	.size-logo {
-		height: 95px !important;
-		width: 130px !important;
+		height: 105px !important;
+		width: 140px !important;
+		display: block !important;
 	}
 }
 
